@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Translator</h1>
+        <form id="translator-form" enctype="multipart/form-data">
+            <!-- Input Type Selection -->
+            <label for="input-type">Select Input Type:</label>
+            <select id="input-type" required>
+                <option value="text">Text</option>
+                <option value="audio">Audio</option>
+                <option value="image">Image</option>
+            </select>
+
+            <!-- Target Language Selection -->
+            <label for="target-language">Select Target Language:</label>
+            <select id="target-language" required>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Bengali">Bengali</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Malayalam">Malayalam</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Gujarati">Gujarati</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Odia">Odia</option>
+                <option value="Urdu">Urdu</option>
+            </select>
+
+            <!-- Text Input -->
+            <div id="text-input">
+                <label for="text">Enter Text:</label>
+                <textarea id="text" rows="4" placeholder="Enter text to translate"></textarea>
+            </div>
+
+            <!-- Audio Input -->
+            <div id="audio-input" style="display: none;">
+                <label for="audio">Upload Audio File:</label>
+                <input type="file" id="audio" accept=".wav,.mp3,.flac,.m4a" required>
+                <p class="file-requirements">Supported formats: .wav, .mp3, .flac, .m4a</p>
+            </div>
+
+            <!-- Image Input -->
+            <div id="image-input" style="display: none;">
+                <label for="image">Upload Image File:</label>
+                <input type="file" id="image" accept=".png,.jpg,.jpeg,.bmp,.tiff" required>
+                <p class="file-requirements">Supported formats: .png, .jpg, .jpeg, .bmp, .tiff</p>
+            </div>
+
+            <!-- Translate Button -->
+            <button type="submit">Translate</button>
+        </form>
+
+        <!-- Translation Result -->
+        <div id="result">
+            <h2>Translation Result</h2>
+            <p><strong>Original Text:</strong> <span id="original-text">N/A</span></p>
+            <p><strong>Translated Text:</strong> <span id="translated-text">N/A</span></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

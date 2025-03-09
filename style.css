@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to ensure the container is centered even if content grows */
+}
+
+.container {
+    background: white;
+    padding: 25px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Slightly larger border radius for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    width: 450px; /* Slightly wider container */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 25px; /* Increased margin for better spacing */
+    font-size: 28px; /* Larger font size for the heading */
+    color: #333; /* Darker text color for better readability */
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px; /* Increased margin for better spacing */
+    font-weight: bold; /* Bold labels for better visibility */
+    color: #555; /* Slightly darker label color */
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 12px; /* Increased padding for better input field size */
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly larger border radius */
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    min-height: 100px; /* Set a minimum height for the textarea */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for the button */
+    padding: 12px 20px; /* Increased padding for better button size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#result {
+    margin-top: 25px; /* Increased margin for better spacing */
+    text-align: left;
+    padding: 15px; /* Added padding for better spacing */
+    background-color: #f9f9f9; /* Light background for the result section */
+    border-radius: 6px; /* Rounded corners for the result section */
+    border: 1px solid #ddd; /* Subtle border for the result section */
+}
+
+#result p {
+    margin: 10px 0; /* Added margin for better spacing between result lines */
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+#result strong {
+    color: #333; /* Darker text color for better readability */
+}
+
+.file-requirements {
+    font-size: 14px; /* Smaller font size for file requirements */
+    color: #666; /* Lighter text color for file requirements */
+    margin-top: 5px; /* Added margin for better spacing */
+}
